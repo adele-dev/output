@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'output';
+  onomatopoeias: string[]=[
+    "houlala",
+    "waouh",
+    "hiha",
+    "ding",
+    "psst"
+  ];
+
+  onReceiveNewOnomatopia(inputValue:string){
+    console.log(inputValue);
+    this.onomatopoeias.push(inputValue);
+  }
+
 }
